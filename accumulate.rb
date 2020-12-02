@@ -4,11 +4,12 @@
 # Note: all the recorded answers should be lowercase
 
 p "Are we there yet?"
-
+answers = Array.new
 answer = gets.chomp.downcase
-
 while answer != "yes"
   p "Are we there yet?"
-  
   answer = gets.chomp.downcase
+  answers.push(answer)
 end
+puts answers.inspect
+

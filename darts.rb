@@ -29,3 +29,4 @@
 #     (x-j)^2 + (y-k)^2 = r^2
 
 p "Enter X,Y coordinates in the format 'X,Y'"
+gets numbers.chomp.split(",")

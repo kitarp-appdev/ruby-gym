@@ -23,5 +23,12 @@
 #   b.body = "Complementary metal-oxide semiconductor"
 #   b.abbreviate # => "CMOS"
 
-
-
+p "Enter a sentence:"
+sentence = gets.upcase.chomp!
+sentence = sentence.split(/[-,\s]+/)
+arr = ""
+h = Hash.new
+  sentence.each { |w|
+    arr= arr + w[0]
+  }
+p arr

@@ -37,3 +37,25 @@
 
 
 p "Enter an integer"
+number = gets.to_i
+
+if number%3 == 0
+  if number%5 == 0
+    if number%7 == 0
+      p "PlingPlangPlong"
+    else
+      p "PlingPlang"
+    end
+  elsif number%7 == 0
+     p "PlingPlong"
+  else
+    p "Pling"
+  end
+elsif number%5 == 0
+  p "Plang"
+elsif number%7 == 0
+  p "Plong"
+else
+  p number
+end
+      

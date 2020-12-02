@@ -14,3 +14,19 @@
 #   5. The year is not a leap year (it has 365 days).
 
 p "Enter a year:"
+year = gets.to_i
+
+if year%4 == 0
+  if year%100 == 0
+    if year%400 == 0
+      p "The year is a leap year (it has 366 days)."
+    else 
+      p "The year is not a leap year (it has 365 days)."
+    end
+  else
+    p "The year is a leap year (it has 366 days)."
+  end
+else 
+  p "The year is not a leap year (it has 365 days)."
+end
+

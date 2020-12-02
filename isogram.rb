@@ -20,3 +20,7 @@
 #   String.isogram?("eleven") # => false
 #   String.isogram?("subdermatoglyphic") # => true
 
+class String
+  def isogram?
+    
+
